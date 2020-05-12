@@ -1,0 +1,34 @@
+@import "../../../styles.scss";
+
+
+.pomodoro-timer {
+  display: flex;
+  background-color: white;
+}
+  
+.timer {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  color: $tomato;
+  border: 1px $tomato;
+}
+
+.options {
+
+  .song-option {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  .time-options {
+    display: inline-block;
+  }
+  
+  .tomato-icon {
+    height: 2em;
+    width: 2em;
+    display: inline;
+  }
+
+}
