@@ -1,19 +1,19 @@
 <section class="options text-center">
-  <div class="song-option">
+  <!-- <div class="song-option">
     <input placeholder="Enter a song to play at end of timer" style="width: 16em;">
-  </div>
+  </div> -->
   <div id="time-increment" class="time-options">
     <label class="one">
-      <input type="radio" name="toggle">1x <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x1 time (default)" />
+      <input type="radio" name="toggle"><span>1x</span> <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x1 time (default)" />
     </label>
     <label class="two">
-      <input type="radio" name="toggle">2x <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x2 time" />
+      <input type="radio" name="toggle"><span>2x</span> <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x2 time" />
     </label>
     <label class="three">
-      <input type="radio" name="toggle">3x <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x3 time" />
+      <input type="radio" name="toggle"><span>3x</span> <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x3 time" />
     </label>
     <label class="four">
-      <input type="radio" name="toggle">4x <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x4 time" />
+      <input type="radio" name="toggle"><span>4x</span> <img src="assets/images/tomato.png" class="tomato-icon" alt="tomato svg x4 time" />
     </label>
 </div>
 </section>
@@ -22,8 +22,10 @@
     <div>
         <h1>CSS drawing of tomato timer</h1>
         <p>animate different colors for length passed</p>
-        <p>show time left</p>
+        <p>{{timeLeft}}</p>
+        <button (click)='pause()'>Pause</button>
+        <button (click)='restart()'>Clear</button>
     </div>
   </div>
 </section>
-<button>Start</button>
+<button (click)='start()'>Start</button>
