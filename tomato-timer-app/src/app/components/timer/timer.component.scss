@@ -3,7 +3,7 @@
 
 .pomodoro-timer {
   display: flex;
-  background-color: white;
+  background-color: $white;
 }
   
 .timer {
@@ -15,12 +15,6 @@
 }
 
 .options {
-
-  // .song-option {
-  //   display: inline-block;
-  //   margin-right: 1em;
-  // }
-
   .time-options {
     display: inline-block;
   }
@@ -30,11 +24,11 @@
     width: 2em;
     display: inline;
   }
-
 }
 
 .time-options {
   margin: .1em;
+
   label {
     float: left;
     width: 4em;
@@ -44,13 +38,66 @@
     border: 1px solid #D0D0D0;
     overflow: auto;  
   }
+
   label input {
     position: absolute;
     top: -20px;
   }
 }
+
 input[type="radio"]:checked {
   + span {
     color: $tomato; 
   }
+}
+
+.button {
+  padding: .5em 1em;
+  letter-spacing: .01em;
+  border: transparent;
+  display: inline-block;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button-start,
+.button-clear,
+.button-pause {
+  color: $white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-start {
+  background: $start;
+}
+
+.button-clear {
+  background: $clear;
+}
+
+.button-pause {
+  background: $pause;
+}
+
+.button-start:hover {
+  background: darken( $start, 10% );
+}
+
+.button-clear:hover {
+  background: darken( $clear, 10% );
+}
+
+.button-pause:hover {
+  background: darken( $pause, 10% );
 }
