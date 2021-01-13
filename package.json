@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "gulp-cli": "^2.2.0",
-    "jquery-validation": "^1.18.0",
+    "jquery-validation": "^1.19.3",
     "jquery.mmenu": "^7.0.5"
   },
   "devDependencies": {
